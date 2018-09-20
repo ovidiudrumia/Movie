@@ -1,3 +1,5 @@
+package com.axp.movie;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,7 @@ public class Customer {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
 
-        String result = "Rental record for " + getName() + "\n";
+        String result = "com.axp.movie.Rental record for " + getName() + "\n";
         for (Rental rental : rentals) {
             double amount = 0;
             switch (rental.getMovie().getPriceCode()) {
